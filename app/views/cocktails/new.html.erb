@@ -1,0 +1,17 @@
+<%= form_for @cocktail do |f| %>
+	<p>
+		<%= f.label :cocktail_name %>
+		<%= f.text_field :cocktail_name %>
+	</p>
+	<p>
+		<%= f.label :cocktail_type %>
+		<%= f.text_field :cocktail_type %>
+	</p>
+	<p>
+		<%= f.label :recipe %>
+		<%= f.text_area :recipe %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

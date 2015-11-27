@@ -1,0 +1,17 @@
+<%= form_for Spirit.new do |f| %>
+	<p>
+		<%= f.label :spirit_type %>
+		<%= f.text_field :spirit_type %>
+	</p>
+	<p>
+		<%= f.label :brand_name %>
+		<%= f.text_field :brand_name %>
+	</p>
+	<p>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

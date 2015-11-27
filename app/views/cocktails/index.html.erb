@@ -1,0 +1,59 @@
+<div class="container">
+	<h1 class="h1">All Cocktails</h1>
+		<div class="cocktails-list">
+			<h3 onclick="toggle_visibility('hideMe')">Stirred</h3>
+			<div id="hideMe">
+			<% @cocktails.stirred.each do |c| %>
+				<h5><%= c.cocktail_name %></h5>
+				<p>Type: <%= c.cocktail_type %></p>
+				<p>Recipe: <%= c.recipe %></p>
+				<hr>
+			<% end %>
+			</div>
+		</div>
+		<div class="cocktails-list">
+			<h3>Shaken</h3>
+		<% @cocktails.shaken.each do |c| %>
+			<h5><%= c.cocktail_name %></h5>
+			<p>Type: <%= c.cocktail_type %></p>
+			<p>Recipe: <%= c.recipe %></p>
+			<hr>
+		<% end %>
+		</div>
+		<div class="cocktails-list">
+			<h3>Rum</h3>
+		<% @cocktails.rum.each do |c| %>
+			<h5><%= c.cocktail_name %></h5>
+			<p>Recipe: <%= c.recipe %></p>
+			<hr>
+		<% end %>
+		</div>
+		<div class="cocktails-list">
+			<h3>Bourbon</h3>
+		<% @cocktails.bourbon.each do |c| %>
+			<h5><%= c.cocktail_name %></h5>
+			<p>Type: <%= c.cocktail_type %></p>
+			<p>Recipe: <%= c.recipe %></p>
+			<hr>
+		<% end %>
+		</div>
+		<div class="cocktails-list">
+			<h3>Gin</h3>
+		<% @cocktails.gin.each do |c| %>
+			<h5><%= c.cocktail_name %></h5>
+			<p>Type: <%= c.cocktail_type %></p>
+			<p>Recipe: <%= c.recipe %></p>
+			<hr>
+		<% end %>
+		</div>
+		<div class="cocktails-list">
+			<h3>Mezcal</h3>
+		<% @cocktails.mezcal.each do |c| %>
+			<h5><%= c.cocktail_name %></h5>
+			<p>Type: <%= c.cocktail_type %></p>
+			<p>Recipe: <%= c.recipe %></p>
+			<hr>
+		<% end %>
+		</div>
+		</ul>
+</div>

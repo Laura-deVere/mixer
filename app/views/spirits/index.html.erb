@@ -1,0 +1,44 @@
+<div class="container">
+	<ul id="spirit-index">
+		<h1 class="h1">All Liquor</h1>
+		<li id="button"><h3>Bourbon</h3></li>
+		<div class="bourbon-list">
+			<% @spirits.bourbon.each do |s| %>
+				<p>Type: <%= s.spirit_type %></p>
+				<p>Brand: <%= s.brand_name %></p>
+				<p><%= s.description %></p>
+				<hr>
+			<% end %>	
+		</div>
+		<li id="button2"><h3>Rye</h3></li>
+		<div class="rye-list">
+			<% @spirits.rye.each do |s| %>
+				<p>Type: <%= s.spirit_type %></p>
+				<p>Brand: <%= s.brand_name %></p>
+				<p><%= s.description %></p>
+				<hr>
+			<% end %>	
+		</div>
+		<li id="button3"><h3>Irish Whiskey</h3></li>
+		<div class="irish-whiskey-list">
+			<% @spirits.irishwhiskey.each do |s| %>
+				<p>Type: <%= s.spirit_type %></p>
+				<p>Brand: <%= s.brand_name %></p>
+				<p><%= s.description %></p>
+				<hr>
+			<% end %>	
+		</div>
+		<li id="button4"><h3>Scotch</h3></li>
+		<div class="scotch-list">
+			<% @spirits.scotch.each do |s| %>
+				<p>Type: <%= s.spirit_type %></p>
+				<p>Brand: <%= s.brand_name %></p>
+				<p><%= s.description %></p>
+				<hr>
+			<% end %>	
+		</div>
+	</ul>
+</div>
+<script>
+
+</script>

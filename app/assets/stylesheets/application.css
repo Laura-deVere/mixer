@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+ 	/*background-image: url("BOILERMAKER.jpg"); 
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: 80% 40%;*/
+ 	background-color: #310e1a;
+ 	margin: 0;
+ }
+
+ nav {
+ 	width: 100%;
+ 	height: 100px;
+ }
+
+ ul {
+ 	width: 600px;
+ 	list-style: none;
+ 	margin: 40px auto;
+ }
+
+ ul li {
+ 	display: inline-block;
+ }
+
+ ul li a {
+ 	padding: 10px;
+ 	text-decoration: none;
+ 	color: #a3200f;
+ 	font-size: 20px;
+ }
+
+ .container {
+ 	width: 900px;
+ 	margin: 0 auto;
+ 	
+ }
+
+ h1, h3, h5 {
+ 	color: #f58546;
+ }
+
+ p {
+ 	color: #fdce66;
+ }
+
+ .h1 {
+ 	width: 300px;
+ 	margin: 0 auto;
+ }
+
+.bourbon-list,
+.rye-list,
+.irish-whiskey-list,
+.scotch-list {
+	width: 300px;
+	float: left;
+	padding: 2em;
+	display: none;
+}
+
+.cocktails-list {
+	width: 300px;
+	float: left;
+	padding: 2em;
+}
+
+#spirit-index li {
+	display: block;
+}
